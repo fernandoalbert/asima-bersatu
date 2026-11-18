@@ -14,8 +14,8 @@ Halaman depan mengikuti pola asli asima.kabsml.my.id: ticker berita, hero
 slider, layanan, berita RSS, struktur DPD/DPC/PAC, dewan pakar, TV, dan
 footer 3 kolom. Menu "Profil Asosiasi" membuka halaman tambahan bergaya
 APMOI (Tentang, Program, Berita, Daftar Anggota, Persyaratan, Kontak,
-Pendaftaran, Artikel, Kebijakan Privasi). Tombol 📦 di pojok kanan bawah
-mengunduh tema WordPress.
+Pendaftaran, Artikel, Kebijakan Privasi). Situs tidak menampilkan tombol
+unduh WordPress.
 
 PORTAL ANGGOTA (fitur keanggotaan, gratis tanpa backend)
 https://fernandoalbert.github.io/asima-bersatu/portal/
@@ -23,13 +23,11 @@ https://fernandoalbert.github.io/asima-bersatu/portal/
 REPOSITORI GitHub
 https://github.com/fernandoalbert/asima-bersatu
 
-Di halaman pratinjau ada tombol melayang "📦 Unduh Tema WordPress .zip".
-Tombol itu mengunduh paket tema yang sama dengan file di Downloads HP Anda.
-
-FILE YANG TERSIMPAN DI DOWNLOADS
---------------------------------
-- asima-bersatu.zip  -> paket tema WordPress siap diunggah
+FILE PANDUAN DI DOWNLOADS
+-------------------------
 - PANDUAN-HP.txt     -> panduan ini
+
+Paket tema WordPress tidak disediakan sebagai unduhan dari situs.
 
 CARA PASANG TEMA DI WORDPRESS
 -----------------------------

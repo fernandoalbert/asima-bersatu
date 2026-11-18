@@ -20,7 +20,7 @@ Halaman tambahan: Tentang, Program, Berita (versi asosiasi), Daftar Anggota, Per
 |---|---|
 | `asima-bersatu/` | Sumber tema WordPress (30 file) |
 | `asima-bersatu.zip` | Paket tema siap unggah ke WordPress |
-| `docs/` | Situs statis GitHub Pages bergaya APMOI (11 halaman) + `.zip` bisa diunduh |
+| `docs/` | Situs statis GitHub Pages (11 halaman), tanpa tombol unduh WordPress |
 | `docs/preview/` | Pratinjau tema versi sebelumnya |
 | `preview/` | Sumber pratinjau statis (dipakai lokal/tunnel) |
 | `PANDUAN-HP.txt` | Panduan singkat pemasangan dari HP |
@@ -28,7 +28,7 @@ Halaman tambahan: Tentang, Program, Berita (versi asosiasi), Daftar Anggota, Per
 ## 🚀 Cara pakai
 
 ### 1. Lihat situs di HP
-Buka alamat GitHub Pages di atas di browser HP. Tombol melayang **📦 Unduh Tema .zip** akan mengunduh file tema. Halaman pendaftaran memakai WhatsApp, jadi tidak perlu server/backend.
+Buka alamat GitHub Pages di atas di browser HP. Tidak ada tombol unduh WordPress di situs. Halaman pendaftaran memakai WhatsApp, jadi tidak perlu server/backend.
 
 ### 2. Pasang di WordPress
 1. Login ke dashboard WordPress → **Tampilan → Tema → Tambah Baru → Unggah Tema**.
