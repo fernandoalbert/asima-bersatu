@@ -1,0 +1,16 @@
+# Copyright (C) 2026 ASIMA Bersatu
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ASIMA Bersatu 1.0.0\n"
+"Report-Msgid-Bugs-To: admin@asimabersatu.or.id\n"
+"POT-Creation-Date: 2026-11-18 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: ASIMA Bersatu\n"
+"Language-Team: Indonesian\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Manual\n"
+"Plural-Forms: nplurals=1; plural=0;\n"

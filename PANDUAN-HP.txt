@@ -1,0 +1,31 @@
+ASIMA BERSATU — PRATINJAU DI HP
+================================
+
+Alamat pratinjau (server sementara):
+https://7e8ccf6462193a.app.lhr.life/preview/
+
+Buka alamat itu di browser HP. Halaman pratinjau ini memakai tema ASIMA Bersatu
+dengan data contoh dari situs asima.kabsml.my.id.
+
+Catatan: alamat tunnel bersifat sementara dan bisa berubah bila server dihentikan.
+
+FILE YANG TERSIMPAN DI DOWNLOADS
+--------------------------------
+- asima-bersatu.zip  -> paket tema WordPress siap diunggah
+- PANDUAN-HP.txt     -> panduan ini
+
+CARA PASANG TEMA DI WORDPRESS
+-----------------------------
+1. Buka wp-admin situs Anda > Tampilan (Appearance) > Tema > Tambah Baru > Unggah Tema.
+2. Pilih asima-bersatu.zip dari Downloads, klik Instal Sekarang, lalu Aktifkan.
+3. Buka Tampilan > Customize untuk mengatur:
+   - Identitas ASIMA (tagline & logo cadangan)
+   - Kontak & Pengurus (email, telepon, WhatsApp, alamat)
+   - Beranda ASIMA (judul hero, URL RSS, URL TV, bagian yang ditampilkan)
+   - Warna Tema (warna utama)
+4. Buat menu di Tampilan > Menu dan centang lokasi "Menu Utama".
+5. Pastikan halaman dengan slug berikut ada: berita, pendaftaran-anggota,
+   pengaduan, lbh, lacak-pengaduan, lacak-lbh, login-anggota, dashboard-anggota,
+   verifikasi-kta, kta, surat-tugas, sk-anggota.
+
+Jika ingin pratinjau tetap menyala, beri tahu saya sebelum menutup sesi ini.
