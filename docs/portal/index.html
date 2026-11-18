@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal Anggota — ASIMA Bersatu</title>
+<meta name="description" content="Portal keanggotaan ASIMA Bersatu: pendaftaran, kartu anggota digital, sertifikat, pengaduan, dan bantuan hukum.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--red:#8b1a1a;--red-dark:#5e1010;--gold:#c9a24a;--cream:#f8f5f0;--ink:#241a18;--muted:#6c5c58;--line:#e7ded6;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+h1,h2,h3,h4,.brand__name{font-family:"Plus Jakarta Sans",Inter,sans-serif;letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(1120px,calc(100% - 32px));margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:0;background:#fff;padding:10px;z-index:200}
+.skip:focus{left:8px;top:8px}
+
+.topbar{background:var(--red-dark);color:rgba(255,255,255,.82);font-size:.78rem;padding:7px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar a:hover{color:var(--gold)}
+.site-header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 4px 18px rgba(60,20,10,.05)}
+.header-inner{display:flex;align-items:center;gap:16px;min-height:72px}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand img{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}
+.brand__name{font-weight:800;font-size:1.02rem;color:var(--red);line-height:1.1}
+.brand__sub{display:block;font-family:Inter,sans-serif;font-size:.62rem;font-weight:600;letter-spacing:.02em;color:var(--muted)}
+.nav{margin-left:auto;display:flex;align-items:center;gap:22px}
+.nav a{font-size:.86rem;font-weight:600;color:#4b3c38}
+.nav a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 18px;border-radius:8px;font-weight:700;font-size:.86rem;border:1px solid transparent;cursor:pointer;transition:.2s}
+.btn--primary{background:var(--red);color:#fff}
+.btn--primary:hover{background:var(--red-dark)}
+.btn--gold{background:var(--gold);color:#2a1c08}
+.btn--outline{border-color:var(--line);background:#fff;color:var(--red)}
+.btn--outline:hover{border-color:var(--red)}
+.menu-toggle{display:none;margin-left:auto;border:0;background:none;font-size:1.5rem;cursor:pointer;color:var(--red)}
+
+.hero{background:linear-gradient(135deg,var(--red-dark),var(--red) 60%,#a52222);color:#fff;position:relative;overflow:hidden;padding:64px 0 72px}
+.hero::after{content:"";position:absolute;inset:0;opacity:.25;background-image:radial-gradient(circle at 20% 20%,rgba(255,255,255,.25) 0 2px,transparent 2px);background-size:34px 34px;pointer-events:none}
+.hero__grid{position:relative;z-index:1;display:grid;grid-template-columns:1.35fr .85fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;margin:0 0 18px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero p{color:rgba(255,255,255,.84);max-width:620px;margin:0 0 26px}
+.hero__actions{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:18px}
+.stat b{display:block;font-family:"Plus Jakarta Sans";font-size:1.9rem;line-height:1;color:var(--gold)}
+.stat span{font-size:.74rem;color:rgba(255,255,255,.8)}
+
+section{padding:64px 0}
+.sec-head{max-width:680px;margin-bottom:30px}
+.sec-head .kicker{color:var(--red);font-weight:800;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase}
+.sec-head h2{font-size:clamp(1.6rem,3.6vw,2.4rem);margin:8px 0 10px;line-height:1.15}
+.sec-head p{color:var(--muted);margin:0}
+.grid{display:grid;gap:18px}
+.grid--3{grid-template-columns:repeat(3,1fr)}
+.grid--4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 6px 20px rgba(60,20,10,.04);transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:var(--gold)}
+.card__icon{width:46px;height:46px;display:grid;place-items:center;border-radius:12px;background:var(--cream);font-size:1.35rem;margin-bottom:14px}
+.card h3{font-size:1.05rem;margin:0 0 6px}
+.card p{color:var(--muted);font-size:.88rem;margin:0 0 14px}
+.card a.more{color:var(--red);font-weight:700;font-size:.84rem}
+.alt{background:#fff;border-block:1px solid var(--line)}
+.steps{counter-reset:step;display:grid;gap:16px}
+.step{position:relative;padding-left:58px}
+.step::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:800}
+.step h4{margin:4px 0 4px;font-size:1rem}
+.step p{margin:0;color:var(--muted);font-size:.9rem}
+
+.portal-box{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 10px 30px rgba(60,20,10,.06)}
+.portal-box__side{background:var(--red-dark);color:#fff;padding:34px}
+.portal-box__side h3{margin:0 0 10px;font-size:1.5rem}
+.portal-box__side p{color:rgba(255,255,255,.78);font-size:.9rem}
+.portal-box__side ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px;font-size:.88rem}
+.portal-box__side li::before{content:"✓";color:var(--gold);margin-right:8px;font-weight:800}
+.portal-box__form{padding:34px}
+.field{display:grid;gap:6px;margin-bottom:14px}
+.field label{font-size:.8rem;font-weight:700}
+.field input,.field select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;font-size:.9rem;background:var(--cream)}
+.field input:focus,.field select:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+.demo-card{display:none;margin-top:18px;padding:18px;border-radius:12px;background:linear-gradient(135deg,var(--red),var(--red-dark));color:#fff}
+.demo-card.is-visible{display:block}
+.demo-card small{display:block;opacity:.8}
+.demo-card b{display:block;font-size:1.25rem;margin:6px 0}
+.demo-card .num{font-family:ui-monospace,monospace;letter-spacing:.08em;color:var(--gold)}
+
+.news-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.news-card__body{padding:20px}
+.news-card h3{font-size:1rem;margin:6px 0}
+.news-card p{font-size:.86rem;color:var(--muted);margin:0}
+.badge{display:inline-block;font-size:.68rem;font-weight:800;color:var(--red);background:var(--cream);padding:4px 9px;border-radius:999px}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{color:var(--muted);font-size:.9rem;margin:10px 0 0}
+
+.people{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.person{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center}
+.person__ava{width:58px;height:58px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;font-size:1.6rem;background:var(--cream)}
+.person b{display:block}
+.person span{font-size:.8rem;color:var(--muted)}
+
+.site-footer{background:#2a1614;color:rgba(255,255,255,.72);padding:54px 0 22px;font-size:.88rem}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+.site-footer h4{color:#fff;margin:0 0 12px;font-size:1rem}
+.site-footer a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:32px;padding-top:18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.78rem}
+.fab{position:fixed;right:16px;bottom:20px;z-index:95;display:inline-flex;gap:8px;align-items:center;background:var(--gold);color:#2a1c08;padding:12px 16px;border-radius:999px;font-weight:800;font-size:.84rem;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.fab:hover{background:#e0bb5d}
+
+@media(max-width:900px){.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:12px 16px;border-bottom:1px solid var(--line);gap:0}.nav.is-open{display:flex}.nav a{padding:10px 0;border-bottom:1px solid var(--line)}.menu-toggle{display:block}.header-inner .btn--primary{margin-left:auto}.hero__grid,.portal-box{grid-template-columns:1fr}.grid--3,.grid--4,.people{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.hero{padding:44px 0 54px}.grid--3,.grid--4,.people{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.topbar .container{font-size:.7rem}.fab{bottom:14px;right:12px}.portal-box__side,.portal-box__form{padding:24px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+
+<div class="topbar"><div class="container"><span>ASIMA Bersatu — Aliansi Simalungun Bersatu</span><span><a href="mailto:admin@asimabersatu.or.id">admin@asimabersatu.or.id</a> · <a href="tel:+628211712295">+62 821-1712-295</a></span></div></div>
+
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="../"><img src="https://asima.kabsml.my.id/wp-content/uploads/2026/11/asima-logo-300x300.jpeg" alt="Logo ASIMA Bersatu"><span><span class="brand__name">ASIMA Bersatu</span><span class="brand__sub">Portal Keanggotaan</span></span></a>
+  <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="portalNav">☰</button>
+  <nav class="nav" id="portalNav">
+    <a href="#layanan">Layanan</a><a href="#keanggotaan">Keanggotaan</a><a href="#portal">Portal Anggota</a><a href="#berita">Berita</a><a href="#pengurus">Pengurus</a><a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn--primary" href="https://wa.me/628211712295?text=Halo%20ASIMA%20Bersatu%2C%20saya%20mau%20daftar%20anggota">Daftar Anggota</a>
+</div></header>
+
+<main id="main">
+<section class="hero">
+  <div class="container hero__grid">
+    <div>
+      <span class="eyebrow">Portal resmi keanggotaan</span>
+      <h1>Satu tempat untuk <em>kelola keanggotaan</em> ASIMA Bersatu.</h1>
+      <p>Daftar sebagai DPD, DPC, PAC, atau anggota. Akses kartu anggota digital, sertifikat, layanan pengaduan, dan bantuan hukum — tanpa biaya.</p>
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="#portal">🔐 Masuk Portal Anggota</a>
+        <a class="btn btn--outline" href="#layanan">Lihat Layanan ↓</a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>1.204</b><span>Anggota terdaftar</span></div>
+      <div class="stat"><b>24</b><span>DPD aktif</span></div>
+      <div class="stat"><b>12</b><span>DPC aktif</span></div>
+      <div class="stat"><b>38</b><span>PAC aktif</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="layanan">
+  <div class="container">
+    <div class="sec-head"><span class="kicker">Layanan</span><h2>Semua kebutuhan anggota, dalam satu portal</h2><p>Layanan ini dikelola oleh DPP ASIMA Bersatu dan dapat diakses dari HP mana pun.</p></div>
+    <div class="grid grid--4">
+      <div class="card"><div class="card__icon">🪪</div><h3>Kartu Anggota Digital</h3><p>KTAonline dengan nomor keanggotaan dan QR verifikasi.</p><a class="more" href="#portal">Buka KTA →</a></div>
+      <div class="card"><div class="card__icon">📜</div><h3>Sertifikat</h3><p>Unduh sertifikat keanggotaan dan surat tugas resmi.</p><a class="more" href="https://wa.me/628211712295?text=Saya%20mau%20minta%20sertifikat">Minta sertifikat →</a></div>
+      <div class="card"><div class="card__icon">📣</div><h3>Pengaduan</h3><p>Sampaikan aspirasi & pengaduan masyarakat secara tertulis.</p><a class="more" href="https://wa.me/628211712295?text=Saya%20mau%20menyampaikan%20pengaduan">Kirim pengaduan →</a></div>
+      <div class="card"><div class="card__icon">⚖️</div><h3>Bantuan Hukum</h3><p>Pendampingan LBH untuk anggota dan masyarakat.</p><a class="more" href="https://wa.me/628211712295?text=Saya%20butuh%20bantuan%20hukum%20LBH">Ajukan LBH →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="keanggotaan">
+  <div class="container">
+    <div class="sec-head"><span class="kicker">Keanggotaan</span><h2>Cara menjadi anggota ASIMA Bersatu</h2><p>Proses sederhana, gratis, dan dapat dipantau melalui portal.</p></div>
+    <div class="grid grid--3">
+      <div class="steps">
+        <div class="step"><h4>Isi formulir</h4><p>Siapkan KTP, foto, dan pilih tingkat keanggotaan (DPD/DPC/PAC/Anggota).</p></div>
+        <div class="step"><h4>Verifikasi pengurus</h4><p>Tim DPP memeriksa data maksimal 3 hari kerja.</p></div>
+        <div class="step"><h4>Aktif & dapat KTA</h4><p>Nomor anggota aktif dan kartu digital langsung muncul di portal.</p></div>
+      </div>
+      <div class="card"><div class="card__icon">✅</div><h3>Syarat umum</h3><p>Warga Negara Indonesia, berusia minimal 17 tahun, mendukung tujuan ASIMA Bersatu, dan mengisi data yang valid.</p><a class="more" href="https://wa.me/628211712295?text=Saya%20ingin%20tahu%20syarat%20keanggotaan">Tanya syarat →</a></div>
+      <div class="card"><div class="card__icon">🎯</div><h3>Hak anggota</h3><p>Mengikuti program, memperoleh KTA & sertifikat, mengajukan aspirasi, serta mendapat pendampingan LBH.</p><a class="more" href="../#layanan">Lihat struktur →</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="portal">
+  <div class="container">
+    <div class="sec-head"><span class="kicker">Demo portal</span><h2>Masuk Portal Anggota</h2><p>Contoh tampilan antarmuka anggota. Isi nama & nomor anggota untuk melihat kartu digital contoh (data tidak dikirim ke mana pun).</p></div>
+    <div class="portal-box">
+      <div class="portal-box__side">
+        <h3>Kartu Anggota Digital</h3>
+        <p>Dirancang agar anggota bisa menunjukkan identitas keanggotaan langsung dari HP, kapan dan di mana saja.</p>
+        <ul><li>Nomor anggota unik</li><li>QR verifikasi</li><li>Status keanggotaan aktif</li><li>Unduh sertifikat & surat tugas</li></ul>
+      </div>
+      <div class="portal-box__form">
+        <form id="loginDemo">
+          <div class="field"><label for="nama">Nama lengkap</label><input id="nama" name="nama" placeholder="Contoh: Simalungun Bersatu" required></div>
+          <div class="field"><label for="nomor">Nomor anggota</label><input id="nomor" name="nomor" placeholder="Contoh: ASIMA-2026-001" required></div>
+          <button class="btn btn--primary" type="submit">Lihat Kartu Anggota →</button>
+        </form>
+        <div class="demo-card" id="demoCard" role="status">
+          <small>ASIMA BERSATU · KARTU ANGGOTA DIGITAL</small>
+          <b id="demoNama">—</b>
+          <span class="num" id="demoNomor">—</span>
+          <small>Status: <strong>AKTIF</strong> · Berlaku s/d 31 Des 2026</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="berita">
+  <div class="container">
+    <div class="sec-head"><span class="kicker">Informasi</span><h2>Berita & pengumuman</h2><p>Informasi resmi untuk anggota dan masyarakat Simalungun.</p></div>
+    <div class="grid grid--3">
+      <article class="news-card"><div class="news-card__body"><span class="badge">Pengumuman</span><h3>Pendaftaran anggota periode IV dibuka</h3><p>DPD, DPC, PAC, dan anggota baru dapat mendaftar mulai 1 November 2026.</p></div></article>
+      <article class="news-card"><div class="news-card__body"><span class="badge">Program</span><h3>Program pendampingan LBH untuk anggota</h3><p>Layanan bantuan hukum awal kini bisa diajukan langsung lewat portal.</p></div></article>
+      <article class="news-card"><div class="news-card__body"><span class="badge">Berita</span><h3>HKN ke-62: aksi penanggulangan tuberkulosis</h3><p>Bupati Simalungun meluncurkan rencana aksi daerah di Pematang Raya.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="pengurus">
+  <div class="container">
+    <div class="sec-head"><span class="kicker">Struktur</span><h2>Pengurus DPP ASIMA Bersatu</h2><p>Ketua Umum, Sekretaris Jenderal, Dewan Pakar, dan Sekretariat DPP.</p></div>
+    <div class="people">
+      <div class="person"><div class="person__ava">👤</div><b>Pardi Purba</b><span>Ketua Umum DPP</span></div>
+      <div class="person"><div class="person__ava">👤</div><b>Fernando Albert Damanik</b><span>Sekretaris Jenderal DPP</span></div>
+      <div class="person"><div class="person__ava">🎓</div><b>Prof. Dr. Hoga Saragih</b><span>Dewan Pakar</span></div>
+      <div class="person"><div class="person__ava">🏢</div><b>Sekretariat DPP</b><span>Pematang Raya, Simalungun</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="faq">
+  <div class="container">
+    <div class="sec-head"><span class="kicker">FAQ</span><h2>Pertanyaan yang sering diajukan</h2></div>
+    <details><summary>Apakah pendaftaran anggota berbayar?</summary><p>Tidak. Pendaftaran keanggotaan ASIMA Bersatu gratis. Biaya hanya mungkin muncul jika Anda mengikuti program sukarela tertentu.</p></details>
+    <details><summary>Berapa lama verifikasi keanggotaan?</summary><p>Umumnya maksimal 3 hari kerja setelah formulir lengkap dan valid.</p></details>
+    <details><summary>Apakah KTA digital berlaku sama dengan kartu cetak?</summary><p>Ya. KTA digital memiliki nomor anggota dan QR yang dapat diverifikasi oleh pengurus.</p></details>
+    <details><summary>Bagaimana cara mengajukan bantuan hukum?</summary><p>Hubungi sekretariat DPP melalui WhatsApp di +62 821-1712-295 dengan menyertakan ringkasan kasus.</p></details>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div><h4>ASIMA Bersatu</h4><p>Aliansi Simalungun Bersatu — bersatu, bergerak, berdampak untuk Simalungun. Jl. Pahlawan Nasional Tuan Rondahaim Saragih No. 216, Pematang Raya, Simalungun 21162.</p></div>
+    <div><h4>Layanan</h4><p><a href="#layanan">Kartu Anggota</a><br><a href="#layanan">Sertifikat</a><br><a href="#layanan">Pengaduan</a><br><a href="#layanan">Bantuan Hukum</a></p></div>
+    <div><h4>Kontak</h4><p><a href="mailto:admin@asimabersatu.or.id">admin@asimabersatu.or.id</a><br><a href="https://wa.me/628211712295">WhatsApp: +62 821-1712-295</a><br><a href="../">Kembali ke beranda</a></p></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 ASIMA Bersatu. Hak cipta dilindungi.</span><span>Dibuat dengan GitHub Pages — gratis & permanen.</span></div>
+</div></footer>
+
+<a class="fab" href="../">← Beranda</a>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click',function(){
+  var nav=document.getElementById('portalNav');
+  nav.classList.toggle('is-open');
+  this.setAttribute('aria-expanded',nav.classList.contains('is-open'));
+});
+document.getElementById('loginDemo').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.getElementById('demoNama').textContent=this.nama.value;
+  document.getElementById('demoNomor').textContent=this.nomor.value;
+  document.getElementById('demoCard').classList.add('is-visible');
+});
+</script>
+</body>
+</html>

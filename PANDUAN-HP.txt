@@ -7,6 +7,9 @@ https://fernandoalbert.github.io/asima-bersatu/
 Buka alamat itu di browser HP kapan saja. Alamat ini permanen dan tidak
 bergantung pada komputer/server sementara.
 
+PORTAL ANGGOTA (fitur keanggotaan, gratis tanpa backend)
+https://fernandoalbert.github.io/asima-bersatu/portal/
+
 REPOSITORI GitHub
 https://github.com/fernandoalbert/asima-bersatu
 

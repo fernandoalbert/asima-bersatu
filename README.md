@@ -8,6 +8,8 @@ Pratinjau online: **https://fernandoalbert.github.io/asima-bersatu/** (GitHub Pa
 
 Repo: https://github.com/fernandoalbert/asima-bersatu — Pages disajikan dari folder `docs/` pada branch `main`.
 
+**Portal Anggota** (model portal asosiasi, gratis tanpa backend): https://fernandoalbert.github.io/asima-bersatu/portal/ — berisi kartu anggota digital demo, sertifikat, pengaduan, LBH, berita, pengurus, dan FAQ.
+
 ## 📦 Isi repo
 
 | Path | Keterangan |
