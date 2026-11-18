@@ -4,9 +4,11 @@ Tema WordPress klasik untuk **ASIMA Bersatu (Aliansi Simalungun Bersatu)**, leng
 
 ## 🔗 Alamat permanen
 
-Pratinjau online: **https://fernandoalbert.github.io/asima-bersatu/** (GitHub Pages, gratis, aktif selama repo ada).
+Situs utama (bergaya situs asosiasi APMOI): **https://fernandoalbert.github.io/asima-bersatu/** (GitHub Pages, gratis, aktif selama repo ada).
 
 Repo: https://github.com/fernandoalbert/asima-bersatu — Pages disajikan dari folder `docs/` pada branch `main`.
+
+Halaman yang tersedia: Beranda, Tentang, Program, Berita, Daftar Anggota, Persyaratan, Kontak, Pendaftaran, Artikel, Detail Anggota, dan Kebijakan Privasi. Portofolio tema lama tetap ada di `/preview/`.
 
 **Portal Anggota** (model portal asosiasi, gratis tanpa backend): https://fernandoalbert.github.io/asima-bersatu/portal/ — berisi kartu anggota digital demo, sertifikat, pengaduan, LBH, berita, pengurus, dan FAQ.
 
@@ -16,14 +18,15 @@ Repo: https://github.com/fernandoalbert/asima-bersatu — Pages disajikan dari f
 |---|---|
 | `asima-bersatu/` | Sumber tema WordPress (30 file) |
 | `asima-bersatu.zip` | Paket tema siap unggah ke WordPress |
-| `docs/` | Situs statis untuk GitHub Pages (pratinjau + file `.zip` bisa diunduh) |
+| `docs/` | Situs statis GitHub Pages bergaya APMOI (11 halaman) + `.zip` bisa diunduh |
+| `docs/preview/` | Pratinjau tema versi sebelumnya |
 | `preview/` | Sumber pratinjau statis (dipakai lokal/tunnel) |
 | `PANDUAN-HP.txt` | Panduan singkat pemasangan dari HP |
 
 ## 🚀 Cara pakai
 
-### 1. Lihat pratinjau di HP
-Buka alamat GitHub Pages di atas di browser HP. Tombol **📦 Unduh Tema WordPress .zip** akan mengunduh file tema.
+### 1. Lihat situs di HP
+Buka alamat GitHub Pages di atas di browser HP. Tombol melayang **📦 Unduh Tema .zip** akan mengunduh file tema. Halaman pendaftaran memakai WhatsApp, jadi tidak perlu server/backend.
 
 ### 2. Pasang di WordPress
 1. Login ke dashboard WordPress → **Tampilan → Tema → Tambah Baru → Unggah Tema**.

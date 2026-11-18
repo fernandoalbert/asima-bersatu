@@ -7,6 +7,10 @@ https://fernandoalbert.github.io/asima-bersatu/
 Buka alamat itu di browser HP kapan saja. Alamat ini permanen dan tidak
 bergantung pada komputer/server sementara.
 
+Situs utama mengikuti model situs asosiasi APMOI: Beranda, Tentang, Program,
+Berita, Daftar Anggota, Persyaratan, Kontak, Pendaftaran, Artikel, dan
+Kebijakan Privasi. Tombol 📦 di pojok kanan bawah mengunduh tema WordPress.
+
 PORTAL ANGGOTA (fitur keanggotaan, gratis tanpa backend)
 https://fernandoalbert.github.io/asima-bersatu/portal/
 
