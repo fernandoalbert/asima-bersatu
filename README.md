@@ -4,7 +4,9 @@ Tema WordPress klasik untuk **ASIMA Bersatu (Aliansi Simalungun Bersatu)**, leng
 
 ## 🔗 Alamat permanen
 
-Pratinjau online: `https://<username>.github.io/<repo>/` (GitHub Pages, gratis, aktif selama repo ada).
+Pratinjau online: **https://fernandoalbert.github.io/asima-bersatu/** (GitHub Pages, gratis, aktif selama repo ada).
+
+Repo: https://github.com/fernandoalbert/asima-bersatu — Pages disajikan dari folder `docs/` pada branch `main`.
 
 ## 📦 Isi repo
 

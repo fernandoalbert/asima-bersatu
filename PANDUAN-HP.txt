@@ -1,13 +1,17 @@
-ASIMA BERSATU — PRATINJAU DI HP
-================================
+ASIMA BERSATU — PRATINJAU & TEMA WORDPRESS
+==========================================
 
-Alamat pratinjau (server sementara):
-https://7e8ccf6462193a.app.lhr.life/preview/
+ALAMAT PERMANEN (GitHub Pages — GRATIS)
+https://fernandoalbert.github.io/asima-bersatu/
 
-Buka alamat itu di browser HP. Halaman pratinjau ini memakai tema ASIMA Bersatu
-dengan data contoh dari situs asima.kabsml.my.id.
+Buka alamat itu di browser HP kapan saja. Alamat ini permanen dan tidak
+bergantung pada komputer/server sementara.
 
-Catatan: alamat tunnel bersifat sementara dan bisa berubah bila server dihentikan.
+REPOSITORI GitHub
+https://github.com/fernandoalbert/asima-bersatu
+
+Di halaman pratinjau ada tombol melayang "📦 Unduh Tema WordPress .zip".
+Tombol itu mengunduh paket tema yang sama dengan file di Downloads HP Anda.
 
 FILE YANG TERSIMPAN DI DOWNLOADS
 --------------------------------
@@ -28,4 +32,9 @@ CARA PASANG TEMA DI WORDPRESS
    pengaduan, lbh, lacak-pengaduan, lacak-lbh, login-anggota, dashboard-anggota,
    verifikasi-kta, kta, surat-tugas, sk-anggota.
 
-Jika ingin pratinjau tetap menyala, beri tahu saya sebelum menutup sesi ini.
+CATATAN
+-------
+- GitHub Pages aktif selama repository masih ada.
+- Setiap perubahan yang di-push ke branch main akan otomatis memperbarui
+  alamat pratinjau di atas (biasanya 1-2 menit).
+- Jangan pernah membagikan token GitHub Anda kepada siapa pun.
