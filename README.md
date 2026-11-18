@@ -4,13 +4,13 @@ Tema WordPress klasik untuk **ASIMA Bersatu (Aliansi Simalungun Bersatu)**, leng
 
 ## 🔗 Alamat permanen
 
-Situs utama (bergaya situs asosiasi APMOI): **https://asimabersatu.surge.sh/** (Surge, gratis).
+Situs utama: **https://asimabersatu.surge.sh/** (Surge, gratis). Halaman depan mengikuti pola asli `asima.kabsml.my.id` (ticker berita, hero slider, layanan, berita RSS, struktur DPD/DPC/PAC, dewan pakar, TV, footer 3 kolom). Halaman bergaya APMOI tersedia sebagai halaman tambahan, mulai dari `/tentang.html`.
 
 Cadangan permanen: **https://fernandoalbert.github.io/asima-bersatu/** (GitHub Pages, gratis, aktif selama repo ada).
 
 Repo: https://github.com/fernandoalbert/asima-bersatu — Pages disajikan dari folder `docs/` pada branch `main`.
 
-Halaman yang tersedia: Beranda, Tentang, Program, Berita, Daftar Anggota, Persyaratan, Kontak, Pendaftaran, Artikel, Detail Anggota, dan Kebijakan Privasi. Portofolio tema lama tetap ada di `/preview/`.
+Halaman tambahan: Tentang, Program, Berita (versi asosiasi), Daftar Anggota, Persyaratan, Kontak, Pendaftaran, Artikel, Detail Anggota, dan Kebijakan Privasi. Portofolio tema lama tetap ada di `/preview/`, portal anggota di `/portal/`.
 
 **Portal Anggota** (model portal asosiasi, gratis tanpa backend): https://fernandoalbert.github.io/asima-bersatu/portal/ — berisi kartu anggota digital demo, sertifikat, pengaduan, LBH, berita, pengurus, dan FAQ.
 

@@ -10,9 +10,12 @@ https://fernandoalbert.github.io/asima-bersatu/
 Buka alamat itu di browser HP kapan saja. Alamat ini permanen dan tidak
 bergantung pada komputer/server sementara.
 
-Situs utama mengikuti model situs asosiasi APMOI: Beranda, Tentang, Program,
-Berita, Daftar Anggota, Persyaratan, Kontak, Pendaftaran, Artikel, dan
-Kebijakan Privasi. Tombol 📦 di pojok kanan bawah mengunduh tema WordPress.
+Halaman depan mengikuti pola asli asima.kabsml.my.id: ticker berita, hero
+slider, layanan, berita RSS, struktur DPD/DPC/PAC, dewan pakar, TV, dan
+footer 3 kolom. Menu "Profil Asosiasi" membuka halaman tambahan bergaya
+APMOI (Tentang, Program, Berita, Daftar Anggota, Persyaratan, Kontak,
+Pendaftaran, Artikel, Kebijakan Privasi). Tombol 📦 di pojok kanan bawah
+mengunduh tema WordPress.
 
 PORTAL ANGGOTA (fitur keanggotaan, gratis tanpa backend)
 https://fernandoalbert.github.io/asima-bersatu/portal/

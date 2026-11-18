@@ -3,54 +3,273 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Beranda — ASIMA Bersatu</title>
-<meta name="description" content="ASIMA Bersatu — Aliansi Simalungun Bersatu. Bersatu, bergerak, berdampak untuk Simalungun.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/asosiasi.css">
+<title>ASIMA Bersatu — Aliansi Simalungun Bersatu (Pratinjau Tema)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme/style.css">
+<style>
+.gh-download{position:fixed;right:16px;bottom:20px;z-index:95;display:flex;align-items:center;gap:10px;max-width:calc(100vw - 32px);padding:10px 14px;border-radius:999px;background:#8b1a1a;color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.28);font:600 13px/1.2 Inter,system-ui,sans-serif;text-decoration:none}
+.gh-download:hover{background:#6f1414;color:#fff}
+.gh-download b{color:#f0d18a;font-weight:700}
+@media(max-width:700px){.gh-download{bottom:76px;right:12px;padding:9px 12px;font-size:12px}}
+</style>
 </head>
-<body>
-<a class="skip" href="#main">Lewati ke konten</a>
-<div class="topbar"><div class="container"><span>ASIMA Bersatu — Aliansi Simalungun Bersatu</span><span><a href="mailto:admin@asimabersatu.or.id">admin@asimabersatu.or.id</a> · <a href="tel:+628211712295">+62 821-1712-295</a></span></div></div>
-<header class="site-header"><div class="container header-inner">
-<a class="logo" href="index.html"><img src="https://asima.kabsml.my.id/wp-content/uploads/2026/11/asima-logo-300x300.jpeg" alt="Logo ASIMA Bersatu"><span class="logo-text">ASIMA Bersatu<small>Aliansi Simalungun Bersatu</small></span></a>
-<button class="menu-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="mainNav">☰</button>
-<nav class="nav" id="mainNav"><a href="index.html" class="is-active">Beranda</a><a href="tentang.html">Tentang</a><a href="program.html">Program</a><a href="berita.html">Berita</a><a href="daftar-anggota.html">Daftar Anggota</a><a href="persyaratan.html">Persyaratan</a><a href="kontak.html">Kontak</a><a class="btn btn--red" href="pendaftaran.html">Gabung ASIMA</a></nav>
+<body class="home blog">
+
+<a class="skip-link" href="#main">Lewati ke konten</a>
+
+<div class="topbar"><div class="container">
+  <span><strong>ASIMA Bersatu</strong> — Bersatu, Bergerak, Berdampak untuk Simalungun</span>
+  <div class="topbar__contact">
+    <a href="mailto:admin@asimabersatu.or.id">admin@asimabersatu.or.id</a>
+    <a href="tel:+628211712295">+62 821-1712-295</a>
+  </div>
+</div></div>
+
+<header class="site-header" id="siteHeader"><div class="container header-inner">
+  <a class="brand" href="#">
+    <img src="https://asima.kabsml.my.id/wp-content/uploads/2026/11/asima-logo-300x300.jpeg" alt="Logo ASIMA Bersatu" class="asima-logo">
+    <span class="brand__text"><span class="brand__title">ASIMA Bersatu</span><span class="brand__sub">Aliansi Simalungun Bersatu</span></span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="asima-primary-nav" aria-label="Buka menu"><span></span><span></span><span></span></button>
+  <nav id="asima-primary-nav" class="main-nav" aria-label="Menu utama">
+    <ul class="asima-nav-list">
+      <li><a href="#" aria-current="page">Beranda</a></li>
+      <li><a href="tentang.html">Profil Asosiasi</a></li>
+      <li><a href="#berita">Berita</a></li>
+      <li><a href="#layanan">Pendaftaran</a></li>
+      <li><a href="#layanan">Pengaduan</a></li>
+      <li><a href="#layanan">LBH</a></li>
+      <li><a href="#layanan">Lacak</a></li>
+      <li><a href="portal/">Portal Anggota</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn--primary header-cta" href="#layanan">Daftar Anggota <span aria-hidden="true">→</span></a>
 </div></header>
+
+<div class="ticker" aria-label="Berita terbaru">
+  <div class="ticker__label"><span class="ticker__icon" aria-hidden="true">📰</span> Berita</div>
+  <div class="ticker__wrap"><div class="ticker__track">
+    <div class="ticker__group">
+      <a href="#">Info Lalin Tol Pagi Ini: Ada Kepadatan di Jagorawi dan Janger</a><span class="ticker__sep" aria-hidden="true">◆</span>
+      <a href="#">HKN ke-62 di Simalungun: Bupati Anton Saragih Luncurkan Rencana Aksi Penanggulangan Tuberkulosis</a><span class="ticker__sep" aria-hidden="true">◆</span>
+      <a href="#">PSI Simalungun Konsolidasi Bersama DPD Punggawa Kaesang</a><span class="ticker__sep" aria-hidden="true">◆</span>
+      <a href="#">Membidik Pedagang Pasar agar Lebih Mudah Akses Pembiayaan</a><span class="ticker__sep" aria-hidden="true">◆</span>
+    </div>
+    <div class="ticker__group" aria-hidden="true">
+      <a href="#" tabindex="-1" aria-hidden="true">Info Lalin Tol Pagi Ini: Ada Kepadatan di Jagorawi dan Janger</a><span class="ticker__sep">◆</span>
+      <a href="#" tabindex="-1" aria-hidden="true">HKN ke-62 di Simalungun: Bupati Anton Saragih Luncurkan Rencana Aksi Penanggulangan Tuberkulosis</a><span class="ticker__sep">◆</span>
+      <a href="#" tabindex="-1" aria-hidden="true">PSI Simalungun Konsolidasi Bersama DPD Punggawa Kaesang</a><span class="ticker__sep">◆</span>
+      <a href="#" tabindex="-1" aria-hidden="true">Membidik Pedagang Pasar agar Lebih Mudah Akses Pembiayaan</a><span class="ticker__sep">◆</span>
+    </div>
+  </div></div>
+</div>
+
 <main id="main">
 
-<section class="hero"><div class="container hero__grid"><div>
-<span class="eyebrow">Aliansi Simalungun Bersatu</span>
-<h1>Ekosistem organisasi Simalungun yang <em>kuat &amp; berkelanjutan.</em></h1>
-<p>ASIMA Bersatu menyatukan pengurus, anggota, dan mitra di seluruh Simalungun untuk berkolaborasi, memperjuangkan kepentingan bersama, dan membangun masa depan yang sehat.</p>
-<div class="hero__actions"><a class="btn btn--gold" href="pendaftaran.html">Gabung ASIMA</a><a class="btn btn--ghost" href="tentang.html">Kenali Kami</a></div>
-</div><div class="hero__aside"><b>1.204+</b><span>anggota telah bergabung dan tumbuh bersama</span><hr><b>2013</b><span>didirikan sebagai wadah bersama Simalungun</span></div></div></section>
-<section><div class="container"><div class="sec-head"><span class="kicker">Angka ASIMA</span><h2>Satu organisasi, banyak dampak</h2></div><div class="grid g4">
-<div class="stat"><b data-count="1204">0</b><span>Anggota terdaftar</span></div>
-<div class="stat"><b data-count="24">0</b><span>DPD aktif</span></div>
-<div class="stat"><b data-count="12">0</b><span>Provinsi terjangkau</span></div>
-<div class="stat"><b data-count="38">0</b><span>Program &amp; kegiatan</span></div>
-</div></div></section>
-<section class="alt"><div class="container"><div class="grid g2" style="align-items:center;gap:44px">
-<div><div class="sec-head" style="margin-bottom:18px"><span class="kicker">Tentang Kami</span><h2>Suara bersama warga Simalungun.</h2><p>ASIMA hadir sebagai rumah bersama untuk menciptakan iklim kolaborasi yang kondusif, standar kualitas yang tinggi, serta kegiatan yang saling menguntungkan.</p></div><a class="more" style="color:var(--red);font-weight:700" href="tentang.html">Lihat apa yang kami lakukan →</a></div>
-<div class="prose"><h2 style="font-size:1.2rem;margin:0 0 10px">Visi</h2><p>Menjadi asosiasi terdepan yang mendorong Simalungun yang mandiri, profesional, dan berdaya saing.</p><h2 style="font-size:1.2rem">Misi</h2><p>Advokasi kebijakan, peningkatan kapasitas anggota, perluasan jaringan, dan pengembangan standar organisasi.</p></div>
-</div></div></section>
-<section><div class="container"><div class="sec-head"><span class="kicker">Program Kami</span><h2>Bertumbuh bersama, dalam setiap langkah.</h2><p>Berbagai program dirancang untuk mendukung anggota dari berbagai aspek — mulai dari kebijakan hingga akses pasar.</p></div><div class="grid g4"><div class="card"><div class="card__icon">⚖︎</div><h3>Advokasi &amp; Kebijakan</h3><p>Menyampaikan aspirasi organisasi dan mendampingi regulasi yang berpihak pada masyarakat Simalungun.</p><span class="num">01</span></div><div class="card"><div class="card__icon">✦</div><h3>Pendidikan &amp; Pelatihan</h3><p>Workshop, sertifikasi, dan pendampingan untuk meningkatkan kapasitas anggota dan pengurus.</p><span class="num">02</span></div><div class="card"><div class="card__icon">▤</div><h3>Riset &amp; Data</h3><p>Menyediakan data tren, riset, dan insight strategis bagi pengambilan keputusan organisasi.</p><span class="num">03</span></div><div class="card"><div class="card__icon">◇</div><h3>Jejaring &amp; Kolaborasi</h3><p>Menghubungkan anggota dengan mitra, pemerintah daerah, dan pemangku kepentingan.</p><span class="num">04</span></div></div></div></section>
-<section class="alt"><div class="container"><div class="sec-head"><span class="kicker">Kabar Terbaru</span><h2>Berita &amp; Update</h2></div><div class="grid g3"><a class="news" href="artikel.html?id=1"><div class="news__body"><span class="badge">Kegiatan</span><h3>ASIMA Bersatu Gelar Forum Nasional Simalungun 2026 di Pematang Raya</h3><p>Forum ini mengangkat tema “Bersatu, Bergerak, Berdampak untuk Simalungun” dan menjadi ruang dialog strategis bagi pengurus.</p><div class="meta">12 November 2026 · 4 menit baca</div></div></a><a class="news" href="artikel.html?id=2"><div class="news__body"><span class="badge">Advokasi</span><h3>Dorong Regulasi Platform Digital, ASIMA Sampaikan Paparan ke DPRD</h3><p>Asosiasi menekankan pentingnya perlindungan bagi organisasi kemasyarakatan dan publik independen.</p><div class="meta">5 November 2026 · 6 menit baca</div></div></a><a class="news" href="artikel.html?id=3"><div class="news__body"><span class="badge">Riset</span><h3>Laporan Tren Media & Informasi Simalungun Kuartal III 2026 Dirilis</h3><p>Riset terbaru menunjukkan pertumbuhan signifikan pada segmen informasi digital dan newsletter komunitas.</p><div class="meta">28 Oktober 2026 · 5 menit baca</div></div></a></div></div></section>
-<section><div class="container"><div class="sec-head"><span class="kicker">Anggota Kami</span><h2>Bersama pengurus &amp; anggota terkemuka Simalungun.</h2></div><div class="grid g4"><a class="member" href="anggota-detail.html?id=0"><div class="member__mark">◆</div><b>MediaNusa</b><span>Pembaca: 2,4 jt · Bergabung 2014</span></a><a class="member" href="anggota-detail.html?id=1"><div class="member__mark">●</div><b>DigitalKita</b><span>Pembaca: 860 rb · Bergabung 2017</span></a><a class="member" href="anggota-detail.html?id=2"><div class="member__mark">▲</div><b>BeritaRakyat</b><span>Pembaca: 1,7 jt · Bergabung 2015</span></a><a class="member" href="anggota-detail.html?id=3"><div class="member__mark">■</div><b>InfoNasional</b><span>Pembaca: 3,1 jt · Bergabung 2013</span></a><a class="member" href="anggota-detail.html?id=4"><div class="member__mark">✦</div><b>SuaraOnline</b><span>Pembaca: 420 rb · Bergabung 2019</span></a><a class="member" href="anggota-detail.html?id=5"><div class="member__mark">◈</div><b>KabarDaerah</b><span>Pembaca: 610 rb · Bergabung 2018</span></a><a class="member" href="anggota-detail.html?id=6"><div class="member__mark">✧</div><b>SimalungunTV</b><span>Pembaca: 980 rb · Bergabung 2020</span></a><a class="member" href="anggota-detail.html?id=7"><div class="member__mark">⬟</div><b>RayaPost</b><span>Pembaca: 530 rb · Bergabung 2021</span></a></div></div></section>
-<section class="alt"><div class="container"><div class="cta"><h2>Jadilah bagian dari perubahan Simalungun.</h2><p>Dapatkan akses jaringan, pelatihan, advokasi, dan dukungan untuk mengembangkan organisasi Anda bersama kami.</p><div class="cta__actions"><a class="btn btn--gold" href="pendaftaran.html">Daftar Sekarang →</a><a class="btn btn--ghost" href="kontak.html">Hubungi Kami</a></div></div></div></section>
+<section class="hero" aria-label="Berita utama">
+  <div class="hero__slides" id="asimaHeroSlides">
+    <article class="hero__slide is-active" style="--slide-image:url('assets/hero-1.svg')">
+      <div class="container hero__layout">
+        <div class="hero__content">
+          <span class="hero__cat">Kab. Simalungun</span>
+          <h2 class="hero__title"><a href="#">HKN ke-62 di Simalungun: Bupati Anton Saragih Luncurkan Rencana Aksi Penanggulangan Tuberkulosis</a></h2>
+          <p class="hero__desc">Bupati Simalungun Anton Achmad Saragih meluncurkan Rencana Aksi Daerah Penanggulangan Tuberkulosis pada peringatan HKN ke-62 di Pematang Raya.</p>
+          <div class="hero__meta"><span>📰 Nusantara News Today</span><span>18 Nov 2026</span></div>
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="#">Baca Selengkapnya →</a>
+            <a class="btn btn--outline" href="#">Tonton TV</a>
+          </div>
+        </div>
+        <aside class="hero__quick" aria-label="Akses cepat">
+          <div class="hero__quick-title">Akses Cepat</div>
+          <div class="hero__quick-sub">Layanan ASIMA Bersatu</div>
+          <div class="hero__quick-list">
+            <a href="#layanan"><span class="q-icon" aria-hidden="true">🪪</span><span>Pendaftaran Anggota</span><span class="q-arrow" aria-hidden="true">→</span></a>
+            <a href="#layanan"><span class="q-icon" aria-hidden="true">📣</span><span>Pengaduan Masyarakat</span><span class="q-arrow" aria-hidden="true">→</span></a>
+            <a href="#layanan"><span class="q-icon" aria-hidden="true">⚖️</span><span>Bantuan Hukum / LBH</span><span class="q-arrow" aria-hidden="true">→</span></a>
+            <a href="#layanan"><span class="q-icon" aria-hidden="true">🔍</span><span>Lacak Pengaduan</span><span class="q-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </aside>
+      </div>
+    </article>
+    <article class="hero__slide" style="--slide-image:url('assets/hero-2.svg')" aria-hidden="true">
+      <div class="container hero__layout">
+        <div class="hero__content">
+          <span class="hero__cat">Politik</span>
+          <h2 class="hero__title"><a href="#">PSI Simalungun Konsolidasi Bersama DPD Punggawa Kaesang Kota Siantar dan Kabupaten Simalungun</a></h2>
+          <p class="hero__desc">Dalam upaya memperkuat komunikasi, membangun kolaborasi, serta memperluas jaringan solidaritas antarelemen masyarakat.</p>
+          <div class="hero__meta"><span>📰 Nusantara News Today</span><span>17 Nov 2026</span></div>
+          <div class="hero__actions"><a class="btn btn--gold" href="#">Baca Selengkapnya →</a><a class="btn btn--outline" href="#">Tonton TV</a></div>
+        </div>
+        <aside class="hero__quick" aria-label="Akses cepat">
+          <div class="hero__quick-title">Akses Cepat</div><div class="hero__quick-sub">Layanan ASIMA Bersatu</div>
+          <div class="hero__quick-list">
+            <a href="#layanan"><span class="q-icon" aria-hidden="true">🪪</span><span>Pendaftaran Anggota</span><span class="q-arrow" aria-hidden="true">→</span></a>
+            <a href="#layanan"><span class="q-icon" aria-hidden="true">📣</span><span>Pengaduan Masyarakat</span><span class="q-arrow" aria-hidden="true">→</span></a>
+            <a href="#layanan"><span class="q-icon" aria-hidden="true">⚖️</span><span>Bantuan Hukum / LBH</span><span class="q-arrow" aria-hidden="true">→</span></a>
+            <a href="#layanan"><span class="q-icon" aria-hidden="true">🔍</span><span>Lacak Pengaduan</span><span class="q-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </aside>
+      </div>
+    </article>
+    <article class="hero__slide" style="--slide-image:url('assets/hero-3.svg')" aria-hidden="true">
+      <div class="container hero__layout">
+        <div class="hero__content">
+          <span class="hero__cat">Berita Utama</span>
+          <h2 class="hero__title"><a href="#">Membidik Pedagang Pasar agar Lebih Mudah Akses Pembiayaan</a></h2>
+          <p class="hero__desc">Berbagai upaya dilakukan agar pedagang pasar dapat mengakses pembiayaan dengan lebih mudah dan terjangkau.</p>
+          <div class="hero__meta"><span>📰 Nusantara News Today</span><span>17 Nov 2026</span></div>
+          <div class="hero__actions"><a class="btn btn--gold" href="#">Baca Selengkapnya →</a><a class="btn btn--outline" href="#">Tonton TV</a></div>
+        </div>
+        <aside class="hero__quick" aria-label="Akses cepat">
+          <div class="hero__quick-title">Akses Cepat</div><div class="hero__quick-sub">Layanan ASIMA Bersatu</div>
+          <div class="hero__quick-list">
+            <a href="#layanan"><span class="q-icon" aria-hidden="true">🪪</span><span>Pendaftaran Anggota</span><span class="q-arrow" aria-hidden="true">→</span></a>
+            <a href="#layanan"><span class="q-icon" aria-hidden="true">📣</span><span>Pengaduan Masyarakat</span><span class="q-arrow" aria-hidden="true">→</span></a>
+            <a href="#layanan"><span class="q-icon" aria-hidden="true">⚖️</span><span>Bantuan Hukum / LBH</span><span class="q-arrow" aria-hidden="true">→</span></a>
+            <a href="#layanan"><span class="q-icon" aria-hidden="true">🔍</span><span>Lacak Pengaduan</span><span class="q-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </aside>
+      </div>
+    </article>
+  </div>
+  <div class="container hero__controls">
+    <button class="hero__arrow" type="button" id="heroPrev" aria-label="Berita sebelumnya">‹</button>
+    <div class="hero__dots" id="heroDots" role="tablist" aria-label="Pilih berita">
+      <button class="hero__dot is-active" type="button" data-index="0" role="tab" aria-selected="true" aria-label="Berita 1"></button>
+      <button class="hero__dot" type="button" data-index="1" role="tab" aria-selected="false" aria-label="Berita 2"></button>
+      <button class="hero__dot" type="button" data-index="2" role="tab" aria-selected="false" aria-label="Berita 3"></button>
+    </div>
+    <button class="hero__arrow" type="button" id="heroNext" aria-label="Berita berikutnya">›</button>
+  </div>
+  <div class="hero__progress"><span id="heroProgress"></span></div>
+</section>
+
+<section class="section section--tight" id="tentang"><div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow" data-reveal>Tentang Kami</span><h2 data-reveal>ASIMA Bersatu</h2></div>
+    <p data-reveal>ASIMA Bersatu adalah aliansi warga Simalungun yang menggerakkan informasi, layanan keanggotaan, pengaduan masyarakat, dan bantuan hukum untuk kemajuan daerah.</p>
+  </div>
+  <div class="pillars">
+    <div class="pillar" data-reveal><div class="pillar__num">01</div><h3>Bersatu</h3><p>Mengikat sinergi warga Simalungun di DPD, DPC, dan PAC dalam satu wadah organisasi.</p></div>
+    <div class="pillar" data-reveal><div class="pillar__num">02</div><h3>Bergerak</h3><p>Menghadirkan layanan nyata: pendaftaran anggota, pengaduan masyarakat, dan bantuan hukum.</p></div>
+    <div class="pillar" data-reveal><div class="pillar__num">03</div><h3>Berdampak</h3><p>Mendorong perubahan yang terukur bagi kemajuan Simalungun dan kesejahteraan warganya.</p></div>
+  </div>
+</div></section>
+
+<section class="section section--cream" id="layanan"><div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow" data-reveal>Layanan</span><h2 data-reveal>Layanan ASIMA Bersatu</h2></div>
+    <p data-reveal>Satu pintu akses untuk informasi, keanggotaan, aspirasi, dan bantuan hukum warga Simalungun.</p>
+  </div>
+  <div class="grid grid--4">
+    <a class="service-card" href="#" data-reveal><div class="service-card__icon" aria-hidden="true">📰</div><h3>Berita</h3><p>Informasi dan publikasi resmi ASIMA Bersatu.</p></a>
+    <a class="service-card" href="#" data-reveal><div class="service-card__icon" aria-hidden="true">🪪</div><h3>Pendaftaran Anggota</h3><p>Daftar sebagai DPD, DPC, PAC, atau anggota.</p></a>
+    <a class="service-card" href="#" data-reveal><div class="service-card__icon" aria-hidden="true">📣</div><h3>Pengaduan Masyarakat</h3><p>Sampaikan aspirasi dan pengaduan Anda.</p></a>
+    <a class="service-card" href="#" data-reveal><div class="service-card__icon" aria-hidden="true">⚖️</div><h3>LBH</h3><p>Permohonan bantuan hukum awal dan pendampingan.</p></a>
+  </div>
+</div></section>
+
+<section class="section" id="berita"><div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow" data-reveal>Berita</span><h2 data-reveal>Berita ASIMA Bersatu</h2></div>
+    <a class="more-link" href="#" data-reveal>Lihat semua →</a>
+  </div>
+  <div class="grid grid--3">
+    <article class="post-card" data-reveal>
+      <a class="post-card__media" href="#" tabindex="-1" aria-hidden="true"><img src="assets/news-1.svg" alt="" loading="lazy"></a>
+      <div class="post-card__body"><div class="post-card__meta"><span class="post-card__source post-card__source--feed">NNT</span><span>18 Nov 2026</span></div>
+        <h3 class="post-card__title"><a href="#">Info Lalin Tol Pagi Ini: Ada Kepadatan di Jagorawi dan Janger</a></h3>
+        <p class="post-card__excerpt">Kepadatan lalu lintas terjadi di tol Jagorawi dan Jakarta-Tangerang. Jasa Marga memberlakukan sistem buka tutup.</p>
+        <a class="post-card__link" href="#">Baca selengkapnya <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="post-card" data-reveal>
+      <a class="post-card__media" href="#" tabindex="-1" aria-hidden="true"><img src="assets/news-2.svg" alt="" loading="lazy"></a>
+      <div class="post-card__body"><div class="post-card__meta"><span class="post-card__source post-card__source--feed">NNT</span><span>18 Nov 2026</span></div>
+        <h3 class="post-card__title"><a href="#">HKN ke-62 di Simalungun: Bupati Anton Saragih Luncurkan Rencana Aksi Tuberkulosis</a></h3>
+        <p class="post-card__excerpt">Bupati Simalungun meluncurkan Rencana Aksi Daerah Penanggulangan Tuberkulosis pada peringatan HKN ke-62.</p>
+        <a class="post-card__link" href="#">Baca selengkapnya <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="post-card" data-reveal>
+      <a class="post-card__media" href="#" tabindex="-1" aria-hidden="true"><img src="assets/news-3.svg" alt="" loading="lazy"></a>
+      <div class="post-card__body"><div class="post-card__meta"><span class="post-card__source post-card__source--local">ASIMA</span><span>6 Nov 2026</span></div>
+        <h3 class="post-card__title"><a href="#">Selamat Datang di Portal Resmi ASIMA Bersatu</a></h3>
+        <p class="post-card__excerpt">Informasi organisasi, keanggotaan, pengaduan masyarakat, dan layanan bantuan hukum dalam satu portal.</p>
+        <a class="post-card__link" href="#">Baca selengkapnya <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<section class="section section--sand" id="struktur"><div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow" data-reveal>Struktur</span><h2 data-reveal>Struktur Organisasi</h2></div>
+    <p data-reveal>Jaringan kepemimpinan dari pusat hingga ke unit kerja di kecamatan.</p>
+  </div>
+  <div class="grid grid--4">
+    <div class="struct-card" data-reveal><div class="struct-card__label">Struktur</div><h3>DPD</h3><p>Dewan Pimpinan Daerah — koordinasi tingkat daerah.</p></div>
+    <div class="struct-card" data-reveal><div class="struct-card__label">Struktur</div><h3>DPC</h3><p>Dewan Pimpinan Cabang — koordinasi tingkat cabang.</p></div>
+    <div class="struct-card" data-reveal><div class="struct-card__label">Struktur</div><h3>PAC</h3><p>Pimpinan Anak Cabang — koordinasi tingkat kecamatan/unit.</p></div>
+    <div class="struct-card" data-reveal><div class="struct-card__label">Keanggotaan</div><h3>KTA &amp; Surat Tugas</h3><p>Dokumen anggota dapat dicetak setelah keanggotaan disetujui.</p></div>
+  </div>
+</div></section>
+
+<section class="section" id="pengurus"><div class="container">
+  <div class="section-head"><div><span class="eyebrow" data-reveal>Dewan Pakar &amp; Pengurus</span><h2 data-reveal>Dewan Pakar ASIMA Bersatu</h2></div></div>
+  <div class="grid grid--4">
+    <div class="person-card" data-reveal><div class="person-card__avatar" aria-hidden="true">👨‍🎓</div><h3>Prof. Dr. Hoga Saragih</h3><div class="person-card__degrees">S.T., M.T., S.Th., M.Th., D.Th., CIRR, MIEEE, IPU</div><div class="person-card__role">Dewan Pakar</div><div class="person-card__text">Guru Besar Fakultas Teknik dan Ilmu Komputer, Ketua Prodi Sistem Informasi — Universitas Bakrie.</div><ul class="person-card__list"><li><span aria-hidden="true">✉</span><a href="#">hoga.saragih@bakrie.ac.id</a></li><li><span aria-hidden="true">📞</span><a href="#">+62 812 8594 780</a></li><li><span aria-hidden="true">🌐</span><a href="#">www.bakrie.ac.id</a></li></ul></div>
+    <div class="person-card" data-reveal><div class="person-card__avatar" aria-hidden="true">👤</div><h3>Pardi Purba</h3><div class="person-card__role">Ketua Umum DPP ASIMA Bersatu</div><ul class="person-card__list"><li><span aria-hidden="true">💬</span><a href="#">WhatsApp Ketum</a></li><li><span aria-hidden="true">✉</span><a href="#">admin@asimabersatu.or.id</a></li></ul></div>
+    <div class="person-card" data-reveal><div class="person-card__avatar" aria-hidden="true">👤</div><h3>Fernando Albert Damanik</h3><div class="person-card__role">Sekretaris Jenderal DPP ASIMA Bersatu</div><ul class="person-card__list"><li><span aria-hidden="true">💬</span><a href="#">WhatsApp Sekjen</a></li><li><span aria-hidden="true">✉</span><a href="#">admin@asimabersatu.or.id</a></li></ul></div>
+    <div class="person-card" data-reveal><div class="person-card__avatar" aria-hidden="true">🏢</div><h3>Sekretariat DPP</h3><div class="person-card__role">Dewan Pimpinan Pusat</div><div class="person-card__text">Jl. Pahlawan Nasional Tuan Rondahaim Saragih No. 216, Kelurahan Raya, Kecamatan Raya, Kab. Simalungun, Sumatera Utara 21162</div><ul class="person-card__list"><li><span aria-hidden="true">✉</span><a href="#">admin@asimabersatu.or.id</a></li><li><span aria-hidden="true">🌐</span><a href="#">asima.kabsml.my.id</a></li></ul></div>
+  </div>
+</div></section>
+
+<section class="section section--cream" id="tv"><div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow" data-reveal>Kanal Video</span><h2 data-reveal>TV Nusantara News Today</h2><p data-reveal>Tonton siaran dan video dari Nusantara News Today.</p></div>
+    <a class="btn btn--primary" href="#" data-reveal>Buka TV ↗</a>
+  </div>
+  <div class="tv-card" data-reveal><h3>TV Nusantara News Today</h3><div class="tv-frame"><img src="assets/tv.svg" alt="Pratinjau kanal video" style="width:100%;height:100%;object-fit:cover"></div><p class="tv-card__note muted">Jika pemutar tidak tampil di dalam halaman, buka kanal TV melalui tombol di atas.</p><a class="btn btn--outline btn--outline-primary" href="#">Buka TV Nusantara News Today ↗</a></div>
+</div></section>
+
+<section class="cta-band"><div class="container">
+  <span class="eyebrow eyebrow--light" data-reveal>Mari Bersama</span>
+  <h2 data-reveal>Bersatu, Bergerak, Berdampak untuk Simalungun</h2>
+  <p data-reveal>Jadilah bagian dari ASIMA Bersatu. Daftar sebagai anggota, sampaikan aspirasi, atau ajukan bantuan hukum.</p>
+  <div class="cta-band__actions" data-reveal><a class="btn btn--gold" href="#layanan">Daftar Anggota →</a><a class="btn btn--outline" href="#">Hubungi Ketum</a></div>
+</div></section>
 
 </main>
+
 <footer class="site-footer"><div class="container">
-<div class="footer-grid">
-<div><h4>ASIMA Bersatu</h4><p>Aliansi Simalungun Bersatu — wadah kolaborasi untuk Simalungun yang kuat, mandiri, dan berdampak.</p><div class="social"><a href="https://instagram.com">ig</a><a href="https://x.com">x</a><a href="https://facebook.com">fb</a><a href="https://youtube.com">yt</a></div></div>
-<div><h4>Navigasi</h4><p><a href="index.html">Beranda</a><br><a href="tentang.html">Tentang</a><br><a href="program.html">Program</a><br><a href="berita.html">Berita</a><br><a href="daftar-anggota.html">Daftar Anggota</a></p></div>
-<div><h4>Tentang</h4><p><a href="tentang.html#visi-misi">Visi &amp; Misi</a><br><a href="tentang.html#struktur">Struktur Organisasi</a><br><a href="persyaratan.html">Persyaratan Anggota</a><br><a href="kebijakan.html">Kebijakan Privasi</a></p></div>
-<div><h4>Hubungi Kami</h4><p>Jl. Pahlawan Nasional Tuan Rondahaim Saragih No. 216<br>Kel. Raya, Kec. Raya, Kab. Simalungun 21162</p><p><a href="mailto:admin@asimabersatu.or.id">admin@asimabersatu.or.id</a><br><a href="tel:+628211712295">+62 821-1712-295</a></p></div>
-</div>
-<div class="footer-bottom"><span>© 2026 ASIMA Bersatu. Seluruh hak cipta dilindungi.</span><span>Dibuat dengan GitHub Pages — gratis &amp; permanen. <a href="preview/">Pratinjau lama</a> · <a href="portal/">Portal anggota</a></span></div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="https://asima.kabsml.my.id/wp-content/uploads/2026/11/asima-logo-300x300.jpeg" alt="Logo ASIMA Bersatu" class="footer-brand__logo">
+      <div class="footer-brand__name">ASIMA Bersatu</div>
+      <div class="footer-brand__tag">Aliansi Simalungun Bersatu — <em>Bersatu, Bergerak, Berdampak untuk Simalungun</em></div>
+      <p class="footer-brand__address">Jl. Pahlawan Nasional Tuan Rondahaim Saragih No. 216, Kelurahan Raya, Kecamatan Raya, Kab. Simalungun, Sumatera Utara 21162</p>
+    </div>
+    <div><div class="footer-title">Layanan</div><ul class="footer-links"><li><a href="tentang.html">🏛️ Profil Asosiasi</a></li><li><a href="#">📋 Pendaftaran Anggota</a></li><li><a href="#">📣 Pengaduan Masyarakat</a></li><li><a href="#">🔍 Lacak Pengaduan</a></li><li><a href="#">⚖️ Bantuan Hukum / LBH</a></li><li><a href="#">🔍 Lacak Permohonan LBH</a></li><li><a href="#">📰 Berita</a></li></ul></div>
+    <div><div class="footer-title">Keanggotaan</div><ul class="footer-links"><li><a href="portal/">🔐 Portal Anggota</a></li><li><a href="#">🪪 Dashboard Anggota</a></li><li><a href="#">✅ Verifikasi KTA</a></li><li><a href="#">🪪 Kartu Tanda Anggota</a></li><li><a href="#">📄 Surat Tugas</a></li><li><a href="#">📜 SK Keanggotaan</a></li></ul></div>
+    <div><div class="footer-title">Kontak</div><ul class="footer-links"><li>✉️ <a href="#">admin@asimabersatu.or.id</a></li><li>💬 <a href="#">WA Ketum: Pardi Purba</a></li><li>💬 <a href="#">WA Sekjen: Fernando A. Damanik</a></li></ul><div class="footer-title" style="margin-top:20px">Pengurus DPP</div><ul class="footer-links"><li>Ketua Umum: Pardi Purba</li><li>Sekjen: Fernando Albert Damanik</li></ul></div>
+  </div>
+  <div class="footer-struktur"><span>DPD</span><span>DPC</span><span>PAC</span><span>ANGGOTA</span><span>LBH</span></div>
+  <div class="footer-bottom"><span>© 2026 ASIMA Bersatu — Aliansi Simalungun Bersatu. Hak cipta dilindungi.</span><span>Bersatu • Bergerak • Berdampak</span></div>
 </div></footer>
-<a class="fab" href="asima-bersatu.zip" download>📦 Unduh Tema .zip</a>
-<script src="assets/asosiasi.js"></script>
+
+<nav class="appbar" aria-label="Navigasi cepat mobile">
+  <a href="#" class="appbar__item is-active"><span aria-hidden="true">⌂</span>Beranda</a>
+  <a href="#berita" class="appbar__item"><span aria-hidden="true">▤</span>Berita</a>
+  <a href="#layanan" class="appbar__item"><span aria-hidden="true">＋</span>Daftar</a>
+  <a href="portal/" class="appbar__item"><span aria-hidden="true">🔐</span>Portal</a>
+</nav>
+
+<a class="gh-download" href="asima-bersatu.zip" download aria-label="Unduh paket tema WordPress ASIMA Bersatu">📦 Unduh Tema WordPress <b>.zip</b></a>
+
+<script src="theme/assets/js/main.js"></script>
 </body>
 </html>
