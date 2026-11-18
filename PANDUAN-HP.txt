@@ -1,7 +1,10 @@
 ASIMA BERSATU — PRATINJAU & TEMA WORDPRESS
 ==========================================
 
-ALAMAT PERMANEN (GitHub Pages — GRATIS)
+ALAMAT UTAMA (Surge — GRATIS)
+https://asimabersatu.surge.sh/
+
+ALAMAT CADANGAN (GitHub Pages — GRATIS)
 https://fernandoalbert.github.io/asima-bersatu/
 
 Buka alamat itu di browser HP kapan saja. Alamat ini permanen dan tidak
